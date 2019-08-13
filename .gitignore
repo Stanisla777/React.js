@@ -3,4 +3,6 @@ node_modules
 package-lock.json
 src/dist
 nod
-
+01-first-project/my-app/package-lock.json
+01-first-project/my-app/node_modules
+01-first-project/my-app/.idea
