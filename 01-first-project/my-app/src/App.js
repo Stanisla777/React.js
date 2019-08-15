@@ -5,6 +5,7 @@ import './App.css';
 
 import Fun_header from './Header';
 import Fun_footer from './Footer';
+import Fun_Body from './body';
 
 const App = () =>
 {
@@ -12,6 +13,7 @@ const App = () =>
       <div className="container App">
           <Fun_header/>
           <Fun_footer/>
+          <Fun_Body/>
       </div>
   )
 };
