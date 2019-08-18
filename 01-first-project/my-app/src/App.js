@@ -3,18 +3,22 @@ import logo from './logo.svg';
 import './App.css';
 
 
-import Fun_header from './Header';
-import Fun_footer from './Footer';
-import Fun_Body from './body';
+
+import Footer from './components/Footer/Footer';
+import MyPosts from './components/Body/MyPosts/MyPosts';
+import Header from './components/Header/Header'
 
 const App = () =>
 {
   return(
-      <div className="container App">
-          <Fun_header/>
-          <Fun_footer/>
-          <Fun_Body/>
+      <div className="wrapper">
+          <div className="container">
+              <Header/>
+              <MyPosts/>
+              <Footer/>
+          </div>
       </div>
+
   )
 };
 

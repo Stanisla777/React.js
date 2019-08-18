@@ -1,0 +1,17 @@
+.footer{
+    background-color: aliceblue;
+    padding: 15px 0;
+
+}
+.footer__navba{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item{
+    color: #279aff;
+    font-size: 16px;
+}
+.active{
+    font-weight: bold;
+}

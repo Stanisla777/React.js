@@ -32,6 +32,17 @@
   }
 }
 
-.ds{
-  color: red;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+  width: 100%;
+  position: relative;
+}
+.container{
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
