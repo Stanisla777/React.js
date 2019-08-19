@@ -8,10 +8,13 @@ const MyPosts=()=>
 {
     return(
         <div className={classes.wrapper_posts}>
-            <Post />
+            <Post like={"15"} message="Привет" />
+            <Post like={0} message="Пока"/>
 
         </div>
     )
 };
 
 export default MyPosts;
+
+

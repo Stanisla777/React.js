@@ -1,18 +1,19 @@
 import React from 'react';
 import '../../App.css';
-import classes from './Body.module.css'
+import classes from './Profile.module.css'
 import MyPosts from './MyPosts/MyPosts'
 
 
 
-const Body=()=>
+const Profile=(props)=>
 {
-    return(
+    return (
         <div className={classes.body}>
+
             <MyPosts/>
 
         </div>
     )
 };
 
-export default Body;
+export default Profile;

@@ -1,11 +1,17 @@
 .footer{
     background-color: aliceblue;
     padding: 15px 0;
-
+    /*display: flex;*/
+    /*justify-content: space-between;*/
 }
-.footer__navba{
-    display: flex;
-    justify-content: space-between;
+.footer__menu{
+   list-style: none;
+}
+.footer__menu li{
+    font-size: 18px;
+}
+.footer__menu li:not(:last-child){
+    margin-bottom: 10px;
 }
 
 .item{

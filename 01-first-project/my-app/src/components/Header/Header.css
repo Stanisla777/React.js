@@ -1,6 +1,9 @@
 .header{
     background-color: aliceblue;
     padding: 15px 0;
+
+}
+.header_wrapper{
     display: flex;
     justify-content: space-between;
 }
@@ -11,4 +14,7 @@
     background-size: cover;
     background-position: center;
     background-image: url("https://www.setwalls.ru/pic/201304/1920x1200/setwalls.ru-25596.jpg");
+}
+.header__name-compony{
+    font-size: 24px;
 }

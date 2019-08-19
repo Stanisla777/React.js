@@ -7,12 +7,15 @@ const Footer = () =>
 {
     return(
         <footer className={classes.footer}>
-            <ul className={classes.footer__navba}>
-                <li className={classes.item}>Пукт 1</li>
-                <li className={classes.item}>Пукт 2</li>
-                <li className={classes.item}>Пукт 3</li>
-                <li className={`${classes.item} ${classes.active}`}>Пукт 4</li>
-            </ul>
+            <div className="container">
+                <ul className={classes.footer__menu}>
+                    <li className={classes.item}>Profile</li>
+                    <li className={classes.item}>О компании</li>
+                    <li className={classes.item}>Разработчикам</li>
+                    <li className={classes.item}>Наша команда</li>
+
+                </ul>
+            </div>
         </footer>
     )
 };

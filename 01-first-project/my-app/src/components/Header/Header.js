@@ -7,13 +7,18 @@ const Header=()=>
 {
     return(
         <header className='header'>
-            <div className="logo"> </div>
-            <div className="header__name-compony">
-                <p>Название компании</p>
-            </div>
-            <div className="header_adress">
-                <p>Адрес компании</p>
-                <p>Телефон компании компании</p>
+            <div className="container">
+                <div className="header_wrapper">
+                    <div className="logo"> </div>
+                    <div className="header__name-compony">
+                        <p>Социальная сеть</p>
+                    </div>
+                    <div className="header_adress">
+                        <p>Адрес компании</p>
+                        <p>Телефон компании компании</p>
+                    </div>
+                </div>
+
             </div>
         </header>
     )

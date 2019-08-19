@@ -1,22 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 
 
 import Footer from './components/Footer/Footer';
-import MyPosts from './components/Body/MyPosts/MyPosts';
-import Header from './components/Header/Header'
+import Header from './components/Header/Header';
+import MainContainer from './components/MainContainer/MainContainer';
 
 const App = () =>
 {
   return(
       <div className="wrapper">
-          <div className="container">
-              <Header/>
-              <MyPosts/>
-              <Footer/>
-          </div>
+          <Header/>
+          <MainContainer/>
+          <Footer/>
       </div>
 
   )
