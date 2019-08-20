@@ -1,9 +1,9 @@
 import React from 'react';
-import './../../App.css';
+import '../../../App.css';
 import classes from './Dialogs.module.css';
 
 
-const Dialog =()=>
+const Dialogs =()=>
 {
     return (
         <div className={classes.dialogs_container}>
@@ -16,4 +16,4 @@ const Dialog =()=>
     )
 };
 
-export default Dialog;
+export default Dialogs;

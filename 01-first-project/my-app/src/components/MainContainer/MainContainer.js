@@ -1,10 +1,14 @@
 import React from 'react';
+import {Route} from 'react-router-dom'
+
 import './../../App.css';
 import classes from './MainContainer.module.css';
 
 import NavBar from './../NavBar/NavBar';
-import Body from './../Body/Profile'
-import Dialogs from './../Dialogs/Dialog'
+import Profile from '../Profile/Profile'
+import Dialogs from '../Profile/Dialogs/Dialogs'
+import MyPosts from '../Profile/MyPosts/MyPosts'
+
 
 const MainContainer =()=>
 {
@@ -13,8 +17,7 @@ const MainContainer =()=>
             <div className="container">
                 <div className={classes.body_container__wrapper}>
                     <NavBar/>
-                    <Body/>
-                    <Dialogs/>
+                    <Profile/>
                 </div>
 
             </div>

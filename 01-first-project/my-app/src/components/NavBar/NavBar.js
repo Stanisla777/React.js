@@ -8,8 +8,8 @@ const NavBar=()=>
     return(
         <div className={classes.wrapper_nav_bar}>
             <ul className={classes.nav_bar_list}>
-                <li>Profile</li>
-                <li>Message</li>
+                <li><a href="/posts">MyPosts</a></li>
+                <li><a href="/dialogs">Dialog</a></li>
                 <li>Разработчикам</li>
                 <li>Наша команда</li>
             </ul>
