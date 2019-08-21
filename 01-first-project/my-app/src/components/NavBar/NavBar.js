@@ -1,15 +1,15 @@
 import React from 'react';
 import './../../App.css';
 import classes from './NavBar.module.css'
-
+import {NavLink} from 'react-router-dom'
 
 const NavBar=()=>
 {
     return(
         <div className={classes.wrapper_nav_bar}>
             <ul className={classes.nav_bar_list}>
-                <li><a href="/posts">MyPosts</a></li>
-                <li><a href="/dialogs">Dialog</a></li>
+                {/*<li><NavLink to="/posts">MyPosts</NavLink></li>*/}
+                {/*<li><NavLink to="/dialogs">Dialog</NavLink></li>*/}
                 <li>Разработчикам</li>
                 <li>Наша команда</li>
             </ul>
