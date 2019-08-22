@@ -9,17 +9,10 @@ import {BrowserRouter, Route} from 'react-router-dom'
 const Profile=(props)=>
 {
     return (
-        <BrowserRouter>
-
             <div className={classes.body}>
                 <Route path='/posts' component={MyPosts} />
                 <Route path='/dialogs' component={Dialogs} />
-
-
-
             </div>
-        </BrowserRouter>
-
     )
 };
 export default Profile;

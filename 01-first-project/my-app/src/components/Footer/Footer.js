@@ -2,15 +2,12 @@ import React from 'react';
 import logo from '../../logo.svg';
 import '../../App.css';
 import classes from './Footer.module.css';
-import {NavLink} from 'react-router-dom'
-import {BrowserRouter, Route} from 'react-router-dom'
+import {NavLink, Route} from 'react-router-dom'
 
 
 const Footer = () =>
 {
     return(
-<BrowserRouter>
-    <Route>
             <footer className={classes.footer}>
                 <div className="container">
                     <ul className={classes.footer__menu}>
@@ -22,8 +19,6 @@ const Footer = () =>
                     </ul>
                 </div>
             </footer>
-    </Route>
-</BrowserRouter>
     )
 };
 

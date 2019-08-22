@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom'
+import {BrowserRouter, Route} from 'react-router-dom'
 
 import './../../App.css';
 import classes from './MainContainer.module.css';
@@ -13,15 +13,17 @@ import MyPosts from '../Profile/MyPosts/MyPosts'
 const MainContainer =()=>
 {
     return (
-        <div className={classes.body_container}>
-            <div className="container">
-                <div className={classes.body_container__wrapper}>
-                    <NavBar/>
-                    <Profile/>
-                </div>
 
+            <div className={classes.body_container}>
+                <div className="container">
+                    <div className={classes.body_container__wrapper}>
+                        <NavBar/>
+                        <Profile/>
+                    </div>
+
+                </div>
             </div>
-        </div>
+
     )
 };
 

@@ -6,15 +6,18 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import MainContainer from './components/MainContainer/MainContainer';
+import {BrowserRouter} from "react-router-dom";
 
 const App = () =>
 {
   return(
-      <div className="wrapper">
-          <Header/>
-          <MainContainer/>
-          <Footer/>
-      </div>
+      <BrowserRouter>
+          <div className="wrapper">
+              <Header/>
+              <MainContainer/>
+              <Footer/>
+          </div>
+      </BrowserRouter>
 
   )
 };
