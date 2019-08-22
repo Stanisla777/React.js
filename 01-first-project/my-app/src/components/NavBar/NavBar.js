@@ -1,17 +1,16 @@
 import React from 'react';
 import './../../App.css';
-import classes from './NavBar.module.css'
-import {NavLink, Route} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 const NavBar=()=>
 {
     return(
-        <div className={classes.wrapper_nav_bar}>
-            <ul className={classes.nav_bar_list}>
-                <li><NavLink to="/posts">MyPosts</NavLink></li>
-                <li><NavLink to="/dialogs">Dialog</NavLink></li>
-                <li>Разработчикам</li>
-                <li>Наша команда</li>
+        <div className="wrapper_nav_bar ">
+            <ul className="wrapper_nav_bar__list nav_bar_list">
+                <li className="item"><NavLink to="/posts">MyPosts</NavLink></li>
+                <li className="item"><NavLink to="/dialogs">Dialogs</NavLink></li>
+                <li className="item">Разработчикам</li>
+                <li className="item">Наша команда</li>
             </ul>
         </div>
     )

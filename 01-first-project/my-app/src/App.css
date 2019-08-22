@@ -46,3 +46,93 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+a{
+  color: #279aff;
+  text-decoration: none;
+}
+a.active{
+  color: red;
+}
+a.active_link{
+  color: green;
+}
+ul{
+  list-style: none;
+}
+
+/*Общие стили*/
+.nav_bar_list{
+
+}
+.nav_bar_list li:not(:last-child){
+  margin-bottom: 10px;
+}
+.nav_bar_list li a{
+  color: #279aff;
+  font-size: 18px;
+}
+/*Компонент навбар*/
+.wrapper_nav_bar{
+  width: 20%;
+}
+
+  /*Компонент Диалоги*/
+
+.dialogs_container__wrapper{
+  display: flex;
+
+}
+.dialogs_container{
+  padding-left: 50px;
+}
+.dialogs_container_users{
+  width: 25%;
+  border-right: 1px solid;
+}
+.dialogs_container_users__item:not(:last-child){
+  margin-bottom: 10px;
+}
+.dialogs_container_users__item p{
+  display: flex;
+  align-items: center;
+}
+.dialogs_container_users__item p:before{
+  content: "";
+  margin-right: 5px;
+  margin-top: 1px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #282c34;
+}
+.dialogs_container_message{
+  padding-right: 10%;
+}
+/*Компонент футер*/
+.footer{
+  background-color: azure;
+  padding: 20px 0;
+}
+/*Компонент профайл*/
+.wrapper_profile{
+  width: 80%;
+}
+
+/*Компонент отдельное сообщение*/
+
+.massege_wrapper{
+  display: flex;
+}
+.massege_wrapper__img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid;
+  margin-right: 20px;
+}
+.massege_wrapper__massege{
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 6px;
+}
