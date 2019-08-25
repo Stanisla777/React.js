@@ -107,7 +107,11 @@ ul{
   background-color: #282c34;
 }
 .dialogs_container_message{
-  padding-right: 10%;
+  padding-left: 100px;
+  width: 75%;
+}
+.dialogs_container{
+  color: #279aff;
 }
 /*Компонент футер*/
 .footer{
@@ -123,6 +127,7 @@ ul{
 
 .massege_wrapper{
   display: flex;
+  margin-bottom: 30px;
 }
 .massege_wrapper__img{
   width: 50px;
@@ -130,9 +135,11 @@ ul{
   border-radius: 50%;
   border: 1px solid;
   margin-right: 20px;
+  flex-shrink: 0;
 }
 .massege_wrapper__massege{
   padding: 10px;
   border: 1px solid;
   border-radius: 6px;
+  min-width: 260px;
 }

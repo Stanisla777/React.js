@@ -5,7 +5,7 @@ import Dialogs from './Dialogs/Dialogs'
 import {BrowserRouter, Route} from 'react-router-dom'
 
 
-const Profile = (props) => {
+const Body = (props) => {
     return (
         <div className="wrapper_profile">
             <Route path='/posts' component={MyPosts}/>
@@ -13,4 +13,4 @@ const Profile = (props) => {
         </div>
     )
 };
-export default Profile;
+export default Body;

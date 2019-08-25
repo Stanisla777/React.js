@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../App.css';
 
 
-const MassegeUsers=()=>
+const MassegeFromUsers=()=>
 {
     return(
         <div className="massege_wrapper">
@@ -15,4 +15,4 @@ const MassegeUsers=()=>
         </div>
     )
 };
-export default MassegeUsers;
+export default MassegeFromUsers;

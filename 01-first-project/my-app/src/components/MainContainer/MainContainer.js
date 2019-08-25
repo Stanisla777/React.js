@@ -5,9 +5,9 @@ import './../../App.css';
 import classes from './MainContainer.module.css';
 
 import NavBar from './../NavBar/NavBar';
-import Profile from '../Profile/Profile'
-import Dialogs from '../Profile/Dialogs/Dialogs'
-import MyPosts from '../Profile/MyPosts/MyPosts'
+import Profile from '../Body/Profile'
+import Dialogs from '../Body/Dialogs/Dialogs'
+import MyPosts from '../Body/MyPosts/MyPosts'
 
 
 const MainContainer =()=>
