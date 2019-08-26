@@ -6,6 +6,7 @@ import {BrowserRouter, Route} from 'react-router-dom'
 
 
 const Body = (props) => {
+
     return (
         <div className="wrapper_profile">
             <Route path='/posts' component={MyPosts}/>

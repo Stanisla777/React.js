@@ -5,7 +5,7 @@ import './../../App.css';
 import classes from './MainContainer.module.css';
 
 import NavBar from './../NavBar/NavBar';
-import Profile from '../Body/Profile'
+import Profile from '../Body/Body'
 import Dialogs from '../Body/Dialogs/Dialogs'
 import MyPosts from '../Body/MyPosts/MyPosts'
 

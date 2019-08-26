@@ -8,7 +8,7 @@ import DialogsUsers from './DialogsUsers'
 
 const Dialogs =()=>
 {
-    let massive_users=[
+    let old_massive_users=[
         {
             id:1,
             name:'Олеся'
@@ -27,21 +27,31 @@ const Dialogs =()=>
         }
     ]
 
-    let massive = massive_users.map(el=><DialogsUsers name={el.name} id={el.id}/>)
+    let massive_massage = [
+        {
+            // id: 1,
+            massage: 'Привет, как дела'
+        },
+        {
+            // id: 2,
+            massage: 'Когда пойдешь на работу?'
+        }
+    ]
+
+    let new_massive_users = old_massive_users.map(el=><DialogsUsers name={el.name} id={el.id}/>)
+    let new_mas_mas = massive_massage.map(el=><MassegeFromUsers message={el.massage}/>)
     return (
         <div className='dialogs_container'>
             <div className="dialogs_container__wrapper">
                 <div className="dialogs_container_users">
-                    {massive}
+                    {new_massive_users}
                 </div>
 
 
 
 
                 <div className="dialogs_container_message">
-                    <MassegeFromUsers />
-                    <MassegeFromUsers />
-                    <MassegeFromUsers />
+                    {new_mas_mas}
                 </div>
 
             </div>

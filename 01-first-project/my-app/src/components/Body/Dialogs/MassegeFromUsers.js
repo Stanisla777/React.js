@@ -2,14 +2,16 @@ import React from 'react';
 import '../../../App.css';
 
 
-const MassegeFromUsers=()=>
+const MassegeFromUsers=(prop)=>
+
 {
+
     return(
         <div className="massege_wrapper">
             <div className="massege_wrapper__img">
             </div>
             <div className="massege_wrapper__massege">
-                <p>Привет</p>
+                <p>{prop.message}</p>
             </div>
 
         </div>
