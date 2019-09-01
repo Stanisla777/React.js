@@ -7,14 +7,16 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import MainContainer from './components/MainContainer/MainContainer';
 import {BrowserRouter} from "react-router-dom";
+import state, {addPost} from "./redux/state";
 
-const App = () =>
+const App = (props) =>
 {
   return(
       <BrowserRouter>
           <div className="wrapper">
               <Header/>
-              <MainContainer/>
+              {/*<MainContainer massive_users={props.appState.massages.massive_users}  massive_massage={props.appState.massages.massive_massage}/>*/}
+              <MainContainer addPost={props.addPost} appState={props.appState}/>
               <Footer/>
           </div>
       </BrowserRouter>
@@ -23,8 +25,10 @@ const App = () =>
 };
 
 
-
-
+function fun(obj) {
+    return obj +4
+}
+fun(8);
 
 
 

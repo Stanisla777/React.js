@@ -64,6 +64,9 @@ ul{
 .nav_bar_list{
 
 }
+.nav_bar_list li{
+  cursor: pointer;
+}
 .nav_bar_list li:not(:last-child){
   margin-bottom: 10px;
 }
@@ -71,13 +74,19 @@ ul{
   color: #279aff;
   font-size: 18px;
 }
+/*компонент главный контейнер*/
+.body_container__wrapper{
+  display: flex;
+}
 /*Компонент навбар*/
 .wrapper_nav_bar{
   width: 20%;
 }
 
   /*Компонент Диалоги*/
-
+.buttton_dialog{
+  display: block;
+}
 .dialogs_container__wrapper{
   display: flex;
 
@@ -142,4 +151,32 @@ ul{
   border: 1px solid;
   border-radius: 6px;
   min-width: 260px;
+}
+/*Посты*/
+
+.post_item{
+  color: #61dafb;
+  display: flex;
+}
+.post_item__img{
+  color: #61dafb;
+  width: 80px;
+  margin-right: 20px;
+}
+.post_item__img img{
+  width:100%;
+  height: auto;
+
+}
+.post_item__text{
+  color: #61dafb;
+}
+.post_item__likes{
+  margin-left: 20px;
+}
+.post_button{
+  display: block;
+}
+.wrapper_posts textarea{
+  margin-bottom: 10px;
 }

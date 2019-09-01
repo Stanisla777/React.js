@@ -1,16 +1,18 @@
 import React from 'react';
 import '../../App.css';
-import MyPosts from './MyPosts/MyPosts'
-import Dialogs from './Dialogs/Dialogs'
-import {BrowserRouter, Route} from 'react-router-dom'
+import ContainerPosts from './MyPosts/ContainerPosts'
+import ContainerDialogs from './Dialogs/ContainerDialogs'
+import {Route} from 'react-router-dom'
+
+
+
 
 
 const Body = (props) => {
-
     return (
         <div className="wrapper_profile">
-            <Route path='/posts' component={MyPosts}/>
-            <Route path='/dialogs' component={Dialogs}/>
+            <Route  path='/posts' render={()=><ContainerPosts addPost={props.addPost}  appState={props.appState}/>}/>
+            <Route path='/dialogs' render={()=><ContainerDialogs appState={props.appState}/>}/>
         </div>
     )
 };

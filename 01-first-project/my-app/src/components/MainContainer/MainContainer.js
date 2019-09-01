@@ -2,23 +2,24 @@ import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom'
 
 import './../../App.css';
-import classes from './MainContainer.module.css';
 
 import NavBar from './../NavBar/NavBar';
 import Profile from '../Body/Body'
-import Dialogs from '../Body/Dialogs/Dialogs'
-import MyPosts from '../Body/MyPosts/MyPosts'
+import ContainerDialogs from '../Body/Dialogs/ContainerDialogs'
+import ContainerPosts from '../Body/MyPosts/ContainerPosts'
+import {addPost} from "../../redux/state";
 
 
-const MainContainer =()=>
+const MainContainer =(props)=>
 {
-    return (
+   return (
 
-            <div className={classes.body_container}>
+            <div className="body_container">
                 <div className="container">
-                    <div className={classes.body_container__wrapper}>
+                    <div className="body_container__wrapper">
+
                         <NavBar/>
-                        <Profile/>
+                        <Profile addPost={props.addPost} appState={props.appState}/>
                     </div>
 
                 </div>
@@ -28,3 +29,4 @@ const MainContainer =()=>
 };
 
 export default MainContainer
+
